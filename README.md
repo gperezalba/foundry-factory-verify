@@ -40,6 +40,7 @@ forge install rari-capital/solmate # Already in this repo, just an example
  * Use this template to create a new project
 ```bash
 forge init --template https://github.com/gperezalba/hardhat-foundry-template
+git remote set-url origin https://github.com/org/project-name.git
 ```
 
 ### Notes
