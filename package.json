@@ -18,6 +18,11 @@
     "solhint:check": "npx solhint --max-warnings 0 --ignore-path .solhintignore 'src/**/*.sol'",
     "solhint:fix": "npx solhint --max-warnings 0 --ignore-path .solhintignore 'src/**/*.sol' --fix",
     "size": "npx hardhat size-contracts",
+    "deploy:anvil": "source .env && forge script script/DeployTokenFactory.s.sol --rpc-url http://localhost:8545 --private-key ${PRIVATE_KEY} --broadcast",
+    "create-token:anvil": "source .env && forge script script/CreateToken.s.sol --rpc-url http://localhost:8545 --private-key ${PRIVATE_KEY} --broadcast",
+    "deploy:goerli": "source .env && forge script script/DeployTokenFactory.s.sol --rpc-url ${ETH_GOERLI_TESTNET_URL} --private-key ${PRIVATE_KEY} --broadcast --verify --etherscan-api-key ${ETHERSCAN_API_KEY} -vvvv",
+    "create-token:goerli": "source .env && forge script script/CreateToken.s.sol --rpc-url ${ETH_GOERLI_TESTNET_URL} --private-key ${PRIVATE_KEY} --broadcast --verify --etherscan-api-key ${ETHERSCAN_API_KEY} -vvvv",
+    "verify-token:goerli": "source .env && forge verify-contract --chain-id 5 --watch src/Token.sol:Token ${ETHERSCAN_API_KEY}",
     "abi": "hardhat export-abi"
   },
   "author": "gperezalba <gperez@tutellus.com>",

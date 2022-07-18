@@ -1,0 +1,27 @@
+{
+  "transactions": [
+    {
+      "hash": "0x45f2b7521c64bdc061ca46fc017a6324c0ed28ec8de4182833304da94a01fe72",
+      "type": "CALL",
+      "contractAddress": "0x5fbdb2315678afecb367f032d93f642f64180aa3",
+      "tx": {
+        "type": "0x02",
+        "from": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "to": "0x5fbdb2315678afecb367f032d93f642f64180aa3",
+        "gas": "0xca664",
+        "value": "0x0",
+        "data": "0x9cbf9e36",
+        "nonce": "0x1",
+        "accessList": []
+      }
+    }
+  ],
+  "receipts": [],
+  "libraries": [],
+  "pending": [
+    "0x45f2b7521c64bdc061ca46fc017a6324c0ed28ec8de4182833304da94a01fe72"
+  ],
+  "path": "broadcast/CreateToken.s.sol/31337/run-latest.json",
+  "returns": {},
+  "timestamp": 1658138017
+}
